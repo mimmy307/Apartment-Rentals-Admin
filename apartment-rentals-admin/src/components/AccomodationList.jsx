@@ -8,7 +8,7 @@ function AccomodationList(){
         <div>
             {accomodationList.map( list => (
                 <div key = {list.id} className = "listContainer">
-                    <img src = {list.picture_url} alt = "accomodation image" />
+                    <img src = {list.picture_url.url} alt = "accomodation image" />
                     <div>
                         <h3>{list.name}</h3>
                         <h4>{list.city}, {list.country}</h4>

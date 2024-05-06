@@ -9,8 +9,8 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div>
-        <Sidebar />
+      <div className='main-container'>
+        <Sidebar  />
         <AccomodationList />
       </div>
       <Footer />

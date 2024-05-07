@@ -1,5 +1,4 @@
 import "../components/Footer.css"
-
 function Footer(){
     return(
         <div className="footer">

@@ -1,4 +1,50 @@
 .accomodation-list-container{
-    width: 70%;
-    padding-left: 30%;
+    width: 80%;
+}
+
+.accomodation-card{
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.accomodation-img{
+    width: 350px;
+    border-radius: 10px;
+}
+
+.list-information{
+   margin: 0 20px;
+   width: 85%;
+}
+.list-information img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.list-information h3, h4 {
+    margin-top: 0;
+}
+
+.list-information span{
+    display: flex;
+    align-items: center;
+}
+
+.icons-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.bookmark-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    width: 15%;
+
 }

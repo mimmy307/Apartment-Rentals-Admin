@@ -1,4 +1,4 @@
-import accomodationData from "../assets/rentals.json"
+import accomodationData from  "../assets/listings.json"
 import { useState } from "react"
 import "../components/AccomodationList.css"
 import AccomodationCard from "./AccomodationCard"

@@ -1,7 +1,18 @@
+import accomodationData from "../assets/listings.json"
+import {useParams} from "react-router-dom"
 
 function AccomodationDetails(){
+    const{accomodationId} = useParams()
+    const accomodationProfile = accomodationData.find((accomodation) => accomodation.id === accomodationId)
+    
     return(
-        <p> Accomodation details</p>
+    <div className="accomodation-details-page" >
+        {accomodationProfile &&(
+            <div>
+            
+            </div>  
+        )}
+    </div>  
     )
 }
 

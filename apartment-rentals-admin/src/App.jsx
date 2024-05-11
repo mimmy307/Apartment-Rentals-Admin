@@ -9,14 +9,14 @@ import {Routes, Route} from "react-router-dom"
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Navbar />
+      <Sidebar  />
       <div className='main-container'>
-        <Sidebar  />
         <Routes>
-        <Route path="/" element={<AccomodationList />} />
-        <Route path ="/accomodation/:accomodationId" element={<AccomodationDetails />} />
-        <Route path ="/favorites" element= {<FavoritesList />} />
+          <Route path="/" element={<AccomodationList />} />
+          <Route path ="/accomodation/:accomodationId" element={<AccomodationDetails />} />
+          <Route path ="/favorites" element= {<FavoritesList />} />
         </Routes>
       </div>
       <Footer />

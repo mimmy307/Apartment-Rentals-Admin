@@ -1,4 +1,8 @@
+.App {
+    position: relative;
+}
 .main-container{
     display: flex;
     flex-direction: row;
+    margin-left: 250px;
 }

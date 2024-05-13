@@ -8,6 +8,7 @@ function AccomodationCard({list}){
                     <div className="list-information">
                         <h3>{list.name}</h3>
                         <h4>{list.neighbourhood}</h4>
+                        
                         <div className="icons-container">
                             <span>
                                 <img src= {peopleIcon} alt= "people icon"/> 

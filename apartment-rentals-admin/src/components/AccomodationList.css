@@ -2,6 +2,11 @@
     
 }
 
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
 .accomodation-card{
     display: flex;
     margin: 20px;

@@ -1,0 +1,41 @@
+.accomodation-details-page{
+    margin: 0 auto;
+}
+
+.first-container img{
+    width: 600px;
+    border-radius: 5px;
+}
+
+.first-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.info-container{
+    margin-left: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.icons-info{
+    display: flex;
+
+}
+
+.icons-info img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.icons-info div{
+    display: flex;
+    width: 20%;
+    margin-top: 20px;
+}
+
+.rental-description{
+    width: 700px
+}

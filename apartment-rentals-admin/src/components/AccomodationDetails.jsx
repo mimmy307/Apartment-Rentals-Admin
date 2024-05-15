@@ -48,6 +48,7 @@ function AccomodationDetails(){
                 <p>{accomodationProfile.description}</p>
                 <h3>Neighbourhood overview</h3>
                 <p>{accomodationProfile.neighborhood_overview}</p>
+                <br/>
                 </div>
 
             </div>  

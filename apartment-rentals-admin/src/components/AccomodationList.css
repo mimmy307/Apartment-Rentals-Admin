@@ -53,6 +53,12 @@
 
 }
 
+.labels{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
 .price-label{
     background-color: #19647E;
     color: white;
@@ -61,3 +67,40 @@
     width: 100px;
     text-align: center;
 }
+
+.label1{
+    background-color: #28AFB0;
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 120px;
+    text-align: center;
+
+}
+
+.label2{
+    background-color: #f2b928d4;
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 70px;
+    text-align: center;
+}
+
+.favourite-button{
+        border: none;
+        text-decoration: none;
+        background-color: #cdcfd1;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 39px;
+        height: 39px;
+        border-radius: 50%;
+        padding-top: 4px;
+      }
+
+.favourite-button img{
+    width: 20px;
+    
+}
+

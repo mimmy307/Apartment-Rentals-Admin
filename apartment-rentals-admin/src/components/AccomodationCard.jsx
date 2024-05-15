@@ -1,6 +1,7 @@
 import  bedIcon from "../assets/images/bed-icon.png"
 import peopleIcon from "../assets/images/people-icon.png"
 import { Link } from "react-router-dom"
+import likeButton from "../assets/images/like-icon.png"
 
 function AccomodationCard({list, addToFavourites}){
     return(
@@ -23,18 +24,28 @@ function AccomodationCard({list, addToFavourites}){
                             </span>
                         </div>
 
-                        <div className="labels">
+                        {/* <div className="labels">
                             {parseFloat(list.price.replace('$', '')) <= 75 && (
-                                <span className="label-green">Budget-Friendly</span>
+                                <span className="label1">Budget-Friendly</span>
                             )}
                             {parseFloat(list.price.replace('$', '')) >= 150 && (
-                                <span className="label-blue">Luxury</span>
+                                <span className="label2">Luxury</span>
                             )}
-                        </div>
+                        </div> */}
                     </div>
                     <div className="bookmark-price">
-                        <button  onClick={() => addToFavourites(list.id)}> ♡ </button>
+                        <button className="favourite-button" onClick={() => addToFavourites(list.id)}> 
+                            <img src={likeButton} />
+                        </button>
+                        <div className="labels">
+                        {parseFloat(list.price.replace('$', '')) <= 75 && (
+                                <span className="label1">Budget-Friendly</span>
+                            )}
+                         {parseFloat(list.price.replace('$', '')) >= 150 && (
+                                <span className="label2">Luxury</span>
+                            )}
                         <p className="price-label">{list.price}/Night</p>  {/*make a nice label*/}
+                        </div>
                     </div>
                 </div>
     )

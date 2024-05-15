@@ -3,7 +3,7 @@
 }
 
 
-.accomodation-card{
+.favourite-card{
     display: flex;
     margin: 20px;
     padding: 20px;
@@ -11,27 +11,27 @@
     border-radius: 10px;
 }
 
-.accomodation-img{
+.fav-accomodation-img{
     width: 350px;
     height: 250px;
     border-radius: 10px;
 }
 
-.list-information{
+.fav-list-information{
    margin: 0 20px; 
    width: 50%;
 }
-.list-information img{
+.fav-list-information img{
     width: 20px;
     height: 20px;
     margin-right: 10px;
 }
 
-.list-information h3, h4 {
+.fav-list-information h3, h4 {
     margin-top: 0;
 }
 
-.list-information span{
+.fav-list-information span{
     display: flex;
     align-items: center;
 }
@@ -42,7 +42,7 @@
     justify-content: flex-end;
 }
 
-.bookmark-price{
+.delete-price{
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -34,7 +34,7 @@ function AccomodationCard({list, addToFavourites}){
                     </div>
                     <div className="bookmark-price">
                         <button  onClick={() => addToFavourites(list.id)}> ♡ </button>
-                        <p>{list.price}/Night</p>  {/*make a nice label*/}
+                        <p className="price-label">{list.price}/Night</p>  {/*make a nice label*/}
                     </div>
                 </div>
     )

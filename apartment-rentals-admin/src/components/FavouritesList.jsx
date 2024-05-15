@@ -10,9 +10,9 @@ function FavouritesList({favouritePlans, deletePlan}){
 
             <div className="accomodation-list-container">
                 {favouritePlans && favouritePlans.map((plan) => (
-                    <div className = "accomodation-card" key= {plan.id}>
-                        <img className="accomodation-img" src = {plan.picture_url} alt = "accomodation image" />
-                        <div className="list-information">
+                    <div className = "favourite-card" key= {plan.id}>
+                        <img className="fav-accomodation-img" src = {plan.picture_url} alt = "accomodation image" />
+                        <div className="fav-list-information">
                             <Link key={plan.id} to={`/accomodation/${plan.id}`} className="link">
                             <h3>{plan.name}</h3>
                             </Link>
@@ -38,7 +38,7 @@ function FavouritesList({favouritePlans, deletePlan}){
                                 )}
                             </div>
                         </div>
-                        <div className="Delete-price">
+                        <div className="delete-price">
                         <button  onClick={() => deletePlan (plan.id)}> Delete </button>
                         <p>{plan.price}/Night</p>  {/*make a nice label*/}
                     </div>

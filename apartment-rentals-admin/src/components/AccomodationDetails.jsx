@@ -24,7 +24,6 @@ function AccomodationDetails(){
                     <h4>{accomodationProfile.neighbourhood}</h4>
                     <p>{accomodationProfile.property_type}</p>
                     <p>Rating: {accomodationProfile.review_scores_rating}/5</p>
-                    <button> ♡ Favourite </button>
                     <p>{accomodationProfile.price} / Night</p>
                     </div>
                 </div>

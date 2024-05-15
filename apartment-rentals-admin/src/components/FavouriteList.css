@@ -1,9 +1,7 @@
-
-
-.link {
-    text-decoration: none;
-    color: inherit;
+.accomodation-list-container{
+    width: 1000px;
 }
+
 
 .accomodation-card{
     display: flex;

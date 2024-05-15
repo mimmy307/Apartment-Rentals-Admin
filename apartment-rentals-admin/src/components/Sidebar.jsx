@@ -1,11 +1,12 @@
 import "../components/Sidebar.css"
+import { Link } from "react-router-dom"
 
 function Sidebar(){
     return (
         <div className="sidebar">
             <img src="https://placehold.co/100x100?text=SS" /> {/*logo placeholder*/}
-            <p>Home</p>
-            <p>Favourites</p>
+            <Link to="/"><p>Home</p></Link>
+            <Link to="/favourites" > <p>Favourites</p></Link>
             <p>About</p>
         </div>
     )

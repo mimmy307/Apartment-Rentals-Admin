@@ -1,12 +1,15 @@
 import  bedIcon from "../assets/images/bed-icon.png"
 import peopleIcon from "../assets/images/people-icon.png"
+import { Link } from "react-router-dom"
 
-function AccomodationCard({list}){
+function AccomodationCard({list, addToFavourites}){
     return(
         <div className = "accomodation-card">
                     <img className="accomodation-img" src = {list.picture_url} alt = "accomodation image" />
                     <div className="list-information">
+                        <Link key={list.id} to={`/accomodation/${list.id}`} className="link">
                         <h3>{list.name}</h3>
+                        </Link>
                         <h4>{list.neighbourhood}</h4>
                         
                         <div className="icons-container">
@@ -30,8 +33,8 @@ function AccomodationCard({list}){
                         </div>
                     </div>
                     <div className="bookmark-price">
-                    <button> ♡ </button>
-                    <p>{list.price}/Night</p>  {/*make a nice label*/}
+                        <button  onClick={() => addToFavourites(list.id)}> ♡ </button>
+                        <p>{list.price}/Night</p>  {/*make a nice label*/}
                     </div>
                 </div>
     )

@@ -39,7 +39,6 @@ function App() {
 
   const handleAddListing = (newlisting) => {
     const updatedListing = [newlisting, ...accomodationList]
-    console.log(updatedListing)
     setAccomodationList(updatedListing);
 }
 

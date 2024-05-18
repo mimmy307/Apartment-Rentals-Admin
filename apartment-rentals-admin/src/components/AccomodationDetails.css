@@ -17,7 +17,7 @@
     border-radius: 5px;
     padding: 30px;
     width: 250px;
-    background-color: #d77b6193;
+    background-color: #67847c93;
   
 
 }
@@ -25,13 +25,13 @@
 .info-container h4{
     font-size: 25px;
     text-align: center;
-    border-bottom:#19647E
+    color: black
 }
 
 
 
 .price{
-    background-color: #28AFB0;
+    background-color: #9bdccf;
     padding: 10px;
     border-radius: 10px;
     text-align: center;
@@ -39,12 +39,12 @@
 }
 
 .reserve{
-    background-color: #19647E;
+    background-color: #e3c166;
     padding: 10px;
     border-radius: 10px;
     text-align: center;
     font-weight: bold;   
-    color: white;
+
 }
 .icons-info{
     display: flex;
@@ -68,5 +68,5 @@
 }
 
 .rental-description{
-    width: 700px
+    width: 700px;
 }

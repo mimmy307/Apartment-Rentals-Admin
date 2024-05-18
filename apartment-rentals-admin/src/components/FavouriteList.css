@@ -7,8 +7,9 @@
     display: flex;
     margin: 20px;
     padding: 20px;
-    border: 1px solid black;
+    border: 1px solid rgba(128, 128, 128, 0.261);
     border-radius: 10px;
+    background-color: white;
 }
 
 .fav-accomodation-img{
@@ -29,6 +30,7 @@
 
 .fav-list-information h3, h4 {
     margin-top: 0;
+    color: #577169;
 }
 
 .fav-list-information span{
@@ -48,4 +50,19 @@
     justify-content: space-between;
     align-items: end;
 
+}
+
+.delete-price button{
+    background-color: #e3c166;
+    border: 1px solid #e3c166;;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.delete-price p{
+    background-color: #9ECCC3;
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
 }

@@ -1,5 +1,6 @@
 .sidebar{
-    background: #223843;
+    /* background-color: #67847C; */
+    background-image: linear-gradient(#67847C, #d0f0e7);
     width: 250px;
     height: 100vh;
     position: fixed;
@@ -17,7 +18,8 @@
 }
 
 .sidebar img{
-    width: 110px;
+    width: 180px;
+    margin-top: 20px;
 }
 
 .side-bar-text{

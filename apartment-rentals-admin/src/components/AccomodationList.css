@@ -26,6 +26,7 @@
 
 .list-information h3, h4 {
     margin-top: 0;
+    color: #577169;
 }
 
 .list-information span{
@@ -54,8 +55,7 @@
 }
 
 .price-label{
-    background-color: #19647E;
-    color: white;
+    background-color: #9ECCC3;
     padding: 10px 10px;
     border-radius: 5px;
     width: 100px;
@@ -63,7 +63,7 @@
 }
 
 .label1{
-    background-color: #28AFB0;
+    background-color: #e3c166;
     padding: 10px;
     border-radius: 5px;
     width: 120px;
@@ -72,7 +72,7 @@
 }
 
 .label2{
-    background-color: #D77A61;
+    background-color: #85B7C6;
     padding: 10px 10px;
     border-radius: 5px;
     width: 70px;
@@ -110,4 +110,13 @@
   
   .link:hover {
     text-decoration: underline;
+  }
+
+  .add-button{
+    background-color: #e3c166;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 880px;
   }

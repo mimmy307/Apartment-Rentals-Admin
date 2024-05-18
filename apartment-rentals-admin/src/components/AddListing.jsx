@@ -1,5 +1,6 @@
 import { useState } from "react";
-import {useNavigate} from "react-router-dom"
+import {useNavigate} from "react-router-dom";
+import {v4 as uuidv4} from "uuid"
 
 function AddListing({handleAddListing}){
     const [name, setName] = useState("");
@@ -8,7 +9,7 @@ function AddListing({handleAddListing}){
     const [propertyType, setPropertyType] = useState("");
     const [rating, setRating] = useState(0);
     const [price, setPrice] = useState("");
-    const [accomodates, setAccomodates] = useState(0);
+    const [accommodates, setAccomodates] = useState(0);
     const [bedrooms, setBedrooms] = useState(0);
     const [bathrooms, setBathrooms] = useState(0);
     const [description, setDescription] = useState("");
@@ -20,7 +21,7 @@ function AddListing({handleAddListing}){
     const handlePropertyType= (e) =>{setPropertyType(e.target.value)};
     const handleRating= (e) =>{setRating(e.target.value)};
     const handlePrice = (e) =>{setPrice(e.target.value)};
-    const handleAccomodates= (e) =>{setAccomodates(e.target.value)};
+    const handleAccommodates= (e) =>{setAccomodates(e.target.value)};
     const handleBedrooms= (e) =>{setBedrooms(e.target.value)};
     const handleBathrooms= (e) =>{setBathrooms(e.target.value)};
     const handleDescription= (e) =>{setDescription(e.target.value)};
@@ -31,7 +32,19 @@ function AddListing({handleAddListing}){
     const handleSubmit = (e) =>{
         e.preventDefault();
 
-        handleAddListing({name, image, city, propertyType, rating, price, accomodates, bedrooms,bathrooms, description, neighborhoodOverview})
+        handleAddListing({
+            id: uuidv4(), 
+            name, 
+            picture_url: image, 
+            neighbourhood: city, 
+            property_type: propertyType, 
+            review_scores_rating: rating, 
+            price, 
+            accommodates, 
+            bedrooms, 
+            bathrooms, 
+            description, 
+            neighborhood_overview: neighborhoodOverview})
         nav("/")
     }
 
@@ -58,7 +71,7 @@ function AddListing({handleAddListing}){
                 <input name="nightly rate" type="text" value={price} onChange={handlePrice} />
 
                 <label>Accomodates</label>
-                <input name="accomodates" type="number" value={accomodates} onChange={handleAccomodates} />
+                <input name="accommodates" type="number" value={accommodates} onChange={handleAccommodates} />
 
                 <label>Bedrooms</label>
                 <input name="bedrooms" type="number" value={bedrooms} onChange={handleBedrooms}/>

@@ -4,7 +4,7 @@
     letter-spacing: 8px;
     font-size: larger;
     margin-top: 0;
-    background-color: gray;
+    background-color: #6d8b83;
     height: 60px;
     
 }
@@ -13,6 +13,7 @@
     margin-bottom: 10px;
     margin-left: 200px;
     margin-top: 0;
+    padding-top: 10px;
 }
 
 

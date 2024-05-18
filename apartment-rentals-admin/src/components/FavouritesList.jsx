@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function FavouritesList({favouritePlans, deletePlan}){
     return(
         <div>
-            <h2>Favourites</h2>
+            <h2 style={{color:"#577169", marginLeft:"20px"}}>Favourites</h2>
 
             <div className="accomodation-list-container">
                 {favouritePlans && favouritePlans.map((plan) => (

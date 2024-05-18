@@ -9,7 +9,7 @@ function AccomodationList({accomodationList, addToFavourites}){
     return(
         <div>
         <Link to="/add-listing">
-        <button> Add Accomodation</button>
+        <button className="add-button"> Add Accomodation</button>
         </Link>
 
         <div className="accomodation-list-main">

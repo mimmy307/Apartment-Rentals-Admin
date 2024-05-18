@@ -1,16 +1,14 @@
-import accomodationData from "../assets/listings.json"
+// import accomodationData from "../assets/listings.json"
 import {useParams} from "react-router-dom"
 import "../components/AccomodationDetails.css"
 import  bedIcon from "../assets/images/bed-icon.png"
 import peopleIcon from "../assets/images/people-icon.png"
 import bathIcon from "../assets/images/bath-icon.png"
 
-function AccomodationDetails(){
+function AccomodationDetails({accomodationList}){
     const{accomodationId} = useParams()
-    const accomodationProfile = accomodationData.find((accomodation) => accomodation.id ===  Number(accomodationId))
-    console.log(accomodationProfile)
-    console.log(accomodationId)
-    console.log(typeof accomodationId)
+    const accomodationProfile = accomodationList.find((accomodation) => accomodation.id ===  Number(accomodationId))
+    
 
     return(
     <div className="accomodation-details-page" >
@@ -22,9 +20,11 @@ function AccomodationDetails(){
                     <img src ={accomodationProfile.picture_url} alt ="accomodation image" />
                     <div className="info-container"> 
                     <h4>{accomodationProfile.neighbourhood}</h4>
-                    <p>{accomodationProfile.property_type}</p>
-                    <p>Rating: {accomodationProfile.review_scores_rating}/5</p>
-                    <p>{accomodationProfile.price} / Night</p>
+                    <p className="property-type">{accomodationProfile.property_type}</p>
+                    <p className="rating">Rating: {accomodationProfile.review_scores_rating}/5</p>
+                    
+                    <p className="price">{accomodationProfile.price} / Night</p>
+                    <p className="reserve">Reserve</p>
                     </div>
                 </div>
                 

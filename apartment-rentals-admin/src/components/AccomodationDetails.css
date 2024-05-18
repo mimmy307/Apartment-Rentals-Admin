@@ -14,14 +14,45 @@
 
 .info-container{
     margin-left: 30px;
-    border: 1px solid black;
     border-radius: 5px;
-    width: 300px;
+    padding: 30px;
+    width: 250px;
+    background-color: #d77b6193;
+  
+
 }
 
+.info-container h4{
+    font-size: 25px;
+    text-align: center;
+    border-bottom:#19647E
+}
+
+
+
+.price{
+    background-color: #28AFB0;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.reserve{
+    background-color: #19647E;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;   
+    color: white;
+}
 .icons-info{
     display: flex;
+}
 
+.icons-info p{
+    /* color: #b8624a; */
+    font-weight: bold;
 }
 
 .icons-info img{

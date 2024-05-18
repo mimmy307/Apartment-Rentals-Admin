@@ -8,6 +8,7 @@ import Sidebar from './components/Sidebar'
 import {Routes, Route} from "react-router-dom"
 import { useState } from 'react'
 import accomodationData from  "./assets/listings.json"
+import AddListing from './components/AddListing'
 
 function App() {
   const [favouritePlans, setFavouritePlans] = useState([])
@@ -36,6 +37,12 @@ function App() {
     setFavouritePlans(updatedFavouritePlans);
   }
 
+  const handleAddListing = (newlisting) => {
+    const updatedListing = [newlisting, ...accomodationList]
+    console.log(updatedListing)
+    setAccomodationList(updatedListing);
+}
+
   return (
     <div className="App">
       <Navbar />
@@ -43,8 +50,9 @@ function App() {
       <div className='main-container'>
         <Routes>
           <Route path="/" element={<AccomodationList accomodationList={accomodationList} addToFavourites={addToFavourites}/>} />
-          <Route path ="/accomodation/:accomodationId" element={<AccomodationDetails />} />
+          <Route path ="/accomodation/:accomodationId" element={<AccomodationDetails accomodationList={accomodationList}/>} />
           <Route path ="/favourites" element= {<FavouritesList favouritePlans={favouritePlans} deletePlan={deletePlan} /> }/>
+          <Route path ="/add-listing" element ={<AddListing handleAddListing={handleAddListing}/>} />
         </Routes>
       </div>
       <Footer />

@@ -114,9 +114,9 @@
 
   .add-button{
     background-color: #e3c166;
-    border: 1px solid gray;
+    border: 1px solid #e3c166;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
     margin-top: 10px;
     margin-left: 880px;
   }

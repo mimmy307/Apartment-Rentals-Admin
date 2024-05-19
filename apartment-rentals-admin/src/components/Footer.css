@@ -6,6 +6,19 @@
     background-color: #d0f0e7;
     width: 100vw;
     margin-left: 250px;
+    height: 25px;
 
 }
+
+.footer a{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px
+}
+
+.footer img{
+    width: 20px;
+    margin-left: 400px
+}
+
 

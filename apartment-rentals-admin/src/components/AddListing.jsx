@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {useNavigate} from "react-router-dom";
 import {v4 as uuidv4} from "uuid"
+import "../components/AddListing.css"
 
 function AddListing({handleAddListing}){
     const [name, setName] = useState("");
@@ -49,44 +50,55 @@ function AddListing({handleAddListing}){
     }
 
     return(
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="form-container">
             <h2>Add Accomodation</h2>
-            <div>
+            <div className="form-grid">
+            <div className="form-group">
                 <label>Accomodation Name</label>
                 <input name= "name" type="text" value={name} onChange={handleName}/>
-
+            </div>
+            <div className="form-group">
                 <label> Image</label>
                 <input name= "image" type="url" value={image} onChange={handleImage} />
-
+            </div>
+            <div className="form-group">
                 <label>City, Country</label>
                 <input name="city,country" type="text" value= {city} onChange={handleCity} />
-
+            </div>
+            <div className="form-group"> 
                 <label>Property Type</label>
                 <input name="property type" type="text" value={propertyType} onChange={handlePropertyType} />
-
+            </div>
+            <div className="form-group"> 
                 <label>Rating</label>
                 <input name="rating" type="number" value={rating} onChange={handleRating} />
-
+            </div>
+            <div className="form-group"> 
                 <label>Nightly Rate</label>
                 <input name="nightly rate" type="text" value={price} onChange={handlePrice} />
-
+            </div>
+            <div className="form-group"> 
                 <label>Accomodates</label>
                 <input name="accommodates" type="number" value={accommodates} onChange={handleAccommodates} />
-
+            </div>
+            <div className="form-group"> 
                 <label>Bedrooms</label>
                 <input name="bedrooms" type="number" value={bedrooms} onChange={handleBedrooms}/>
-
+            </div>
+            <div className="form-group"> 
                 <label>Bathrooms</label>
                 <input name="bathrooms" type="number" value={bathrooms} onChange={handleBathrooms}/>
-
-                <label>Property Description</label>
-                <input name="property description" type="text" value={description} onChange={handleDescription}/>
-
-                <label>Neighborhood Overview</label>
-                <input name="neighborhood Overview" type="text" value={neighborhoodOverview} onChange={handleNeighborhoodOverview} />
-                
             </div>
-            <button type="submit">Create</button>
+            <div className="form-group"> 
+                <label>Property Description</label>
+                <textarea name="property description"  value={description} onChange={handleDescription}/>
+             </div>
+            <div className="form-group">
+                <label>Neighborhood Overview</label>
+                <textarea name="neighborhood Overview" value={neighborhoodOverview} onChange={handleNeighborhoodOverview} />
+            </div>
+            </div>
+            <button type="submit" className="submit-button">Create</button>
         </form>
 
     )

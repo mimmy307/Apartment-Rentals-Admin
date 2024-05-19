@@ -1,5 +1,5 @@
 import "../components/Sidebar.css"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 // import logo from "../assets/images/Logo.png"
 import logo from "../assets/images/SS (1).svg"
 
@@ -8,9 +8,9 @@ function Sidebar(){
         <div className="sidebar">
             <img src= {logo} />
             <div className="side-bar-text">
-            <Link to="/"><p>Home</p></Link>
-            <Link to="/favourites" > <p>Favourites</p></Link>
-            <p>About</p>
+            <NavLink to="/" activeclassname="active-link" className="nav-link" >Home</NavLink>
+            <NavLink to="/favourites" activeclassname="active-link" className="nav-link"  >Favourites</NavLink>
+            <NavLink to="/about" activeclassname="active-link" className="nav-link"> About</NavLink>
             </div>
         </div>
     )

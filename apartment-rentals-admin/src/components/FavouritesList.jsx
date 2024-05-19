@@ -28,21 +28,23 @@ function FavouritesList({favouritePlans, deletePlan}){
                                     <p>{plan.bedrooms} Bedrooms</p>
                                 </span>
                             </div>
+                        </div>
 
+                        <div className="delete-price">
+                            <button  onClick={() => deletePlan (plan.id)}> Delete </button>
                             <div className="labels">
                                 {parseFloat(plan.price.replace('$', '')) <= 75 && (
-                                    <span className="label-green">Budget-Friendly</span>
+                                    <span className="label1">Budget-Friendly</span>
                                 )}
                                 {parseFloat(plan.price.replace('$', '')) >= 150 && (
-                                    <span className="label-blue">Luxury</span>
+                                    <span className="label2">Luxury</span>
                                 )}
+                                <p>{plan.price}/Night</p>
                             </div>
+
                         </div>
-                        <div className="delete-price">
-                        <button  onClick={() => deletePlan (plan.id)}> Delete </button>
-                        <p>{plan.price}/Night</p>  {/*make a nice label*/}
+                   
                     </div>
-                 </div>
 
                 ))}
             

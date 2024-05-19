@@ -24,15 +24,8 @@ function AccomodationCard({list, addToFavourites}){
                             </span>
                         </div>
 
-                        {/* <div className="labels">
-                            {parseFloat(list.price.replace('$', '')) <= 75 && (
-                                <span className="label1">Budget-Friendly</span>
-                            )}
-                            {parseFloat(list.price.replace('$', '')) >= 150 && (
-                                <span className="label2">Luxury</span>
-                            )}
-                        </div> */}
                     </div>
+
                     <div className="bookmark-price">
                         <button className="favourite-button" onClick={() => addToFavourites(list.id)}> 
                             <img src={likeButton} />
@@ -44,7 +37,7 @@ function AccomodationCard({list, addToFavourites}){
                          {parseFloat(list.price.replace('$', '')) >= 150 && (
                                 <span className="label2">Luxury</span>
                             )}
-                        <p className="price-label">{list.price}/Night</p>  {/*make a nice label*/}
+                        <p className="price-label">{list.price}/Night</p>  
                         </div>
                     </div>
                 </div>

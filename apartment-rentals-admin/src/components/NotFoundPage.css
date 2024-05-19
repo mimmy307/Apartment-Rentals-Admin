@@ -1,0 +1,27 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 90vh; /* Full height of the viewport */
+  width: 100vw;
+}
+
+.not-found img {
+  width: 200px;
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Start rotation from 0 degrees */
+  }
+  100% {
+    transform: rotate(360deg); /* End rotation at 360 degrees (one full rotation) */
+  }
+}
+
+.not-found p {
+  font-size: 30px;
+  margin-top: 10px;
+}

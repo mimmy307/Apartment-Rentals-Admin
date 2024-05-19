@@ -9,6 +9,7 @@ import {Routes, Route} from "react-router-dom"
 import { useState } from 'react'
 import accomodationData from  "./assets/listings.json"
 import AddListing from './components/AddListing'
+import NotFoundPage from "./components/NotFoundPage"
 
 function App() {
   const [favouritePlans, setFavouritePlans] = useState([])
@@ -52,6 +53,7 @@ function App() {
           <Route path ="/accomodation/:accomodationId" element={<AccomodationDetails accomodationList={accomodationList}/>} />
           <Route path ="/favourites" element= {<FavouritesList favouritePlans={favouritePlans} deletePlan={deletePlan} /> }/>
           <Route path ="/add-listing" element ={<AddListing handleAddListing={handleAddListing}/>} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>
       <Footer />

@@ -14,21 +14,15 @@ import NotFoundPage from "./components/NotFoundPage"
 function App() {
   const [favouritePlans, setFavouritePlans] = useState([])
   const [accomodationList, setAccomodationList] = useState(accomodationData)
-  
+
   function addToFavourites(id){
-    let favouritePlan;
-    const filteredPlans = accomodationList.filter(plan =>{
-      if (plan.id === id){
-        favouritePlan = plan;
-        return false;
+    const favouritePlan = accomodationList.find(plan => plan.id ===id)
+      if (favouritePlan){
+        if (!favouritePlans.find(plan => plan.id === id)){
+          setFavouritePlans([favouritePlan, ...favouritePlans])
+        }
       }
-      return true
-    });
-
-    setAccomodationList(filteredPlans);
-    setFavouritePlans([favouritePlan, ...favouritePlans])
-
-  }
+    }
 
   function deletePlan (id){
     const filteredPlans = accomodationList.filter(plan => plan.id !== id);

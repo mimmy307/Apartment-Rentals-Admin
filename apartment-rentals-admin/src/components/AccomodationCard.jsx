@@ -2,8 +2,15 @@ import  bedIcon from "../assets/images/bed-icon.png"
 import peopleIcon from "../assets/images/people-icon.png"
 import { Link } from "react-router-dom"
 import likeButton from "../assets/images/like-icon.png"
+import { useState } from "react"
 
 function AccomodationCard({list, addToFavourites}){
+    const [isFavourite, setIsFavourite] = useState(false);
+    const handleFavouriteClick = () =>{
+        addToFavourites(list.id);
+        setIsFavourite(!isFavourite)
+    }
+
     return(
         <div className = "accomodation-card">
                     <img className="accomodation-img" src = {list.picture_url} alt = "accomodation image" />
@@ -27,7 +34,10 @@ function AccomodationCard({list, addToFavourites}){
                     </div>
 
                     <div className="bookmark-price">
-                        <button className="favourite-button" onClick={() => addToFavourites(list.id)}> 
+                        <button 
+                        className="favourite-button" 
+                        onClick={handleFavouriteClick}
+                        style={{ backgroundColor: isFavourite ? '#D77A61' : '#cdcfd1' }}>
                             <img src={likeButton} />
                         </button>
                         <div className="labels">

@@ -93,9 +93,9 @@
         padding-top: 4px;
       }
 
-.favourite-button:hover {
-        background-color: #D77A61;
-      }
+.favourite-button:hover{
+    background-color: #D77A61;
+}
 
 .favourite-button img{
     width: 20px;

@@ -4,6 +4,7 @@ import "../components/FavouriteList.css"
 import { Link } from "react-router-dom";
 
 function FavouritesList({favouritePlans, deletePlan}){
+    console.log (favouritePlans)
     return(
         <div>
             <h2 style={{color:"#577169", marginLeft:"20px"}}>Favourites</h2>

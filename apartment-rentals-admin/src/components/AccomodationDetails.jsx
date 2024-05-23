@@ -8,7 +8,7 @@ import rating from "../assets/images/rating.png"
 
 function AccomodationDetails({accomodationList}){
     const{accomodationId} = useParams()
-    const accomodationProfile = accomodationList.find((accomodation) => accomodation.id ===  Number(accomodationId))
+    const accomodationProfile = accomodationList.find((accomodation) => accomodation.id == (accomodationId))
     
 
     return(

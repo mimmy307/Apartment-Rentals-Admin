@@ -10,6 +10,7 @@ import { useState } from 'react'
 import accomodationData from  "./assets/listings.json"
 import AddListing from './components/AddListing'
 import NotFoundPage from "./components/NotFoundPage"
+import AboutPage from './pages/AboutPage'
 
 function App() {
   const [favouritePlans, setFavouritePlans] = useState([])
@@ -47,6 +48,7 @@ function App() {
           <Route path ="/accomodation/:accomodationId" element={<AccomodationDetails accomodationList={accomodationList}/>} />
           <Route path ="/favourites" element= {<FavouritesList favouritePlans={favouritePlans} deletePlan={deletePlan} /> }/>
           <Route path ="/add-listing" element ={<AddListing handleAddListing={handleAddListing}/>} />
+          <Route path ="/about" element ={<AboutPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>

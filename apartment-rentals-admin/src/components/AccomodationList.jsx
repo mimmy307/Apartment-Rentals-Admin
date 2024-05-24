@@ -7,7 +7,7 @@ import AccomodationCard from "./AccomodationCard"
 function AccomodationList({accomodationList, addToFavourites}){
 
     return(
-        <div>
+        <div >
         <Link to="/add-listing">
         <button className="add-button"> Add Accomodation</button>
         </Link>

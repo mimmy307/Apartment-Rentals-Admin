@@ -37,7 +37,7 @@ function AccomodationCard({list, addToFavourites}){
                         <button 
                         className="favourite-button" 
                         onClick={handleFavouriteClick}
-                        style={{ backgroundColor: isFavourite ? '#D77A61' : '#cdcfd1' }}>
+                        style={{ backgroundColor: isFavourite ? '#D77A61' : '' }}>
                             <img src={likeButton} />
                         </button>
                         <div className="labels">

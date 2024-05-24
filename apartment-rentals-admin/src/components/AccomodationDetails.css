@@ -1,15 +1,28 @@
 .accomodation-details-page{
     margin: 0 auto;
+    background-color: #f8f9fa; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    width: 1050px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.accomodation-details-page h1{
+    margin-left: 60px;
 }
 
 .first-container img{
-    width: 500px;
+    width: 550px;
     border-radius: 5px;
 }
 
 .first-container{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    
 }
 
 .info-container{
@@ -51,6 +64,7 @@
 }
 .icons-info{
     display: flex;
+    margin-left: 60px
 }
 
 .icons-info p{
@@ -71,16 +85,17 @@
 
 .rental-description{
     width: 700px;
+    margin-left: 60px;
+   
 }
 
 /* .rental-description {
-    width: 800px;
-    padding: 20px;
+    width: 900px;
+    padding: 15px;
     margin-top: 10px; 
     background-color: #f8f9fa; 
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    height: 300px;
 }
 
 .rental-description h3 {

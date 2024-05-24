@@ -49,12 +49,14 @@ function AccomodationDetails({accomodationList}){
                         <p>{accomodationProfile.bedrooms} Bedrooms</p>
                     </div>
                 </div>
+                <hr />
 
                 <div className="rental-description">
                 <h3>About this place</h3>
                 <p>{accomodationProfile.description}</p>
                 <h3>Neighbourhood overview</h3>
                 <p>{accomodationProfile.neighborhood_overview}</p>
+                <br/>
                 <br/>
                 </div>
 

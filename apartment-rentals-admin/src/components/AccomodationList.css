@@ -1,4 +1,4 @@
-
+/* 
 .accomodation-card{
     display: flex;
     margin: 20px;
@@ -6,6 +6,7 @@
     border: 1px solid rgba(128, 128, 128, 0.261);
     border-radius: 10px;
     background-color: white;
+    width: 95%;
 }
 
 .accomodation-img{
@@ -120,3 +121,145 @@
     margin-top: 10px;
     margin-left: 880px;
   }
+
+   */
+
+   .accomodation-list-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 60px; 
+    padding: 10px; 
+    max-width: 1100px;
+    margin-left: 10px
+  }
+  
+  .accomodation-card {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Stack content vertically inside each card */
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.261);
+    border-radius: 10px;
+    background-color: white;
+    width: 100%; /* Make each card take full width of the grid column */
+  }
+  
+  .accomodation-img {
+    width: 100%; /* Ensure image fills its container */
+    height: 250px;
+    border-radius: 10px;
+  }
+  
+  .list-information {
+    margin: 10px 0; /* Adjust margin for better spacing */
+    width: 100%; /* Ensure it takes the full width */
+  }
+  
+  .list-information img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .list-information h3, h4 {
+    margin: 5px 0;
+    color: #577169;
+    line-height: 1.2
+  }
+  
+  .list-information span {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .bookmark-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+  }
+  
+  .labels {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .price-label, .label1, .label2 {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .price-label {
+    background-color: #9ECCC3;
+    width: 100px;
+  }
+  
+  .label1 {
+    background-color: #e3c166;
+    width: 120px;
+  }
+  
+  .label2 {
+    background-color: #85B7C6;
+    width: 70px;
+  }
+  
+  .favourite-button {
+    position: absolute; /* Position the button absolutely */
+    top: 30px; /* Position from the top */
+    right: 30px;
+    border: 0.5px solid rgb(145, 153, 156);
+    background-color: #979b9f;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    padding-top: 4px;
+  }
+  
+  .favourite-button:hover {
+    background-color: #D77A61;
+  }
+  
+  .favourite-button img {
+    width: 20px;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: black;
+    transition: text-decoration 0.2s;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  .add-button {
+    background-color: #e3c166;
+    border: 1px solid #e3c166;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+  }
+
+  .add-button:hover{
+    background-color: #f0d280;
+  }
+  

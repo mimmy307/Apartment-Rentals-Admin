@@ -1,5 +1,5 @@
 .accomodation-list-container{
-    width: 1000px;
+    width: 100%
 }
 
 
@@ -20,7 +20,7 @@
 
 .fav-list-information{
    margin: 0 20px; 
-   width: 50%;
+   width: 60%;
 }
 .fav-list-information img{
     width: 20px;
@@ -57,6 +57,10 @@
     border: 1px solid #e3c166;;
     border-radius: 5px;
     padding: 10px;
+}
+
+.delete-price button:hover{
+    background-color: #f0d280;
 }
 
 .delete-price p{

@@ -1,6 +1,5 @@
 import "../components/Sidebar.css"
 import { NavLink } from "react-router-dom"
-// import logo from "../assets/images/Logo.png"
 import logo from "../assets/images/SS (1).svg"
 
 function Sidebar(){

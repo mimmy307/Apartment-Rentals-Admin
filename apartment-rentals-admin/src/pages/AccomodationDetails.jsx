@@ -1,4 +1,4 @@
-// import accomodationData from "../assets/listings.json"
+
 import {useParams} from "react-router-dom"
 import "../pages/AccomodationDetails.css"
 import  bedIcon from "../assets/images/bed-icon.png"

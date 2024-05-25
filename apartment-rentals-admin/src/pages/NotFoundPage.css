@@ -1,9 +1,9 @@
 .not-found {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
-  height: 90vh; /* Full height of the viewport */
+  justify-content: center; 
+  align-items: center; 
+  height: 90vh; 
   width: 100vw;
 }
 
@@ -14,10 +14,10 @@
 
 @keyframes spin {
   0% {
-    transform: rotate(0deg); /* Start rotation from 0 degrees */
+    transform: rotate(0deg); 
   }
   100% {
-    transform: rotate(360deg); /* End rotation at 360 degrees (one full rotation) */
+    transform: rotate(360deg); 
   }
 }
 

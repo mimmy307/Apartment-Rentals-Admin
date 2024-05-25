@@ -1,15 +1,15 @@
 import './App.css'
-import AccomodationDetails from './components/AccomodationDetails'
-import AccomodationList from './components/AccomodationList'
-import FavouritesList from './components/FavouritesList'
+import AccomodationDetails from './pages/AccomodationDetails'
+import AccomodationList from './pages/AccomodationList'
+import FavouritesList from './pages/FavouritesList'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import {Routes, Route} from "react-router-dom"
 import { useState } from 'react'
 import accomodationData from  "./assets/listings.json"
-import AddListing from './components/AddListing'
-import NotFoundPage from "./components/NotFoundPage"
+import AddListing from './pages/AddListing'
+import NotFoundPage from "./pages/NotFoundPage"
 import AboutPage from './pages/AboutPage'
 
 function App() {

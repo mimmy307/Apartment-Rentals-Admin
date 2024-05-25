@@ -1,6 +1,6 @@
 import  bedIcon from "../assets/images/bed-icon.png"
 import peopleIcon from "../assets/images/people-icon.png"
-import "../components/FavouriteList.css"
+import "../pages/FavouriteList.css"
 import { Link } from "react-router-dom";
 
 function FavouritesList({favouritePlans, deletePlan}){

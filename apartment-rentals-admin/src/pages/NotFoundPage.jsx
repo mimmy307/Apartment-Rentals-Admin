@@ -1,5 +1,5 @@
 import logo from "../assets/images/SS icon (2).svg"
-import "../components/NotFoundPage.css"
+import "../pages/NotFoundPage.css"
 
 function NotFoundPage() {
   return (

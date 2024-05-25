@@ -1,8 +1,7 @@
-// import accomodationData from  "../assets/listings.json"
-// import { useState } from "react"
+
 import { Link } from "react-router-dom"
-import "../components/AccomodationList.css"
-import AccomodationCard from "./AccomodationCard"
+import "../pages/AccomodationList.css"
+import AccomodationCard from "../components/AccomodationCard"
 
 function AccomodationList({accomodationList, addToFavourites}){
 
